@@ -1,4 +1,6 @@
 # Code your solution here!
+require "pry"
+
 def random_number
   rand(6) + 1
 end 
@@ -27,6 +29,7 @@ def run_guessing_game
   computer_number = random_number
   user_input_message
   input = user_input_number
+  binding.pry
   if computer_number == input
     correct_guess
   elsif computer_number != input
