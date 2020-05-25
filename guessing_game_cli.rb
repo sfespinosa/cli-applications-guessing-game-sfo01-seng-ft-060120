@@ -24,11 +24,11 @@ end
 def run_guessing_game 
   computer_number = random_number
   input = user_input_number
-  if input.to_i == computer_number
-    correct_guess
-  elsif computer_number != input.to_i
-    incorrect_guess(computer_number)
-  elsif input == "exit"
+  if input == "exit"
     goodbye_message
+  elsif input.to_i == computer_number
+    correct_guess
+  else
+    incorrect_guess(computer_number)
   end 
 end 
