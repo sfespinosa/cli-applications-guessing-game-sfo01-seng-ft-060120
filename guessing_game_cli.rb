@@ -14,7 +14,7 @@ def correct_guess
 end 
 
 def incorrect_guess(number)
-  puts "Sorry! The computer guessed #{number}"
+  puts "Sorry! The computer guessed #{number}."
 end 
 
 def goodbye_message
