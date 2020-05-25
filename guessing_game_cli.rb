@@ -28,9 +28,9 @@ end
 def run_guessing_game 
   computer_number = random_number
   user_input_message
-  input = user_input_number
+  input = user_input_number.to_i
   binding.pry
-  if computer_number == input
+  if input == computer_number
     correct_guess
   elsif computer_number != input
     incorrect_guess(computer_number)
