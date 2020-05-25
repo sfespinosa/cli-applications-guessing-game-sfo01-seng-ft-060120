@@ -28,11 +28,9 @@ def run_guessing_game
   user_input_message
   input = user_input_number
   if computer_number == input
-    correct_guess
-  end
+    correct_gues
   if computer_number != input
     incorrect_guess(computer_number)
-  end 
   if input == "exit"
     goodbye_message
   end 
