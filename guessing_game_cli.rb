@@ -5,10 +5,6 @@ def random_number
   rand(6) + 1
 end 
 
-def user_input_message
-  puts "Guess the number!"
-end 
-
 def user_input_number
   gets.chomp
 end 
@@ -27,7 +23,6 @@ end
 
 def run_guessing_game 
   computer_number = random_number
-  user_input_message
   input = user_input_number
   if input.to_i == computer_number
     correct_guess
